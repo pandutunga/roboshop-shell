@@ -16,5 +16,4 @@ cp /home/centos/roboshop-shell/roboshop.conf /etc/nginx/default.d/roboshop.conf
 
 echo -e "\e[33mStarting nginx server\e[0m"
 systemctl enable nginx &>>/tmp/roboshop.log
-#systemctl start nginx
 systemctl restart nginx &>>/tmp/roboshop.log
