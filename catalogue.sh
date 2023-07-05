@@ -1,11 +1,10 @@
-
 echo -e "\e[33mConfigurung nodejs repos\e[0m"
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash &>>/tmp/roboshop.log
 
 echo -e "\e[33mInstall nodejs\e[0m"
 yum install nodejs -y &>>/tmp/roboshop.log
 
-echo -e "\e[33madd application user\e[0m"
+echo -e "\e[33m add application user\e[0m"
 useradd roboshop &>>/tmp/roboshop.log
 
 echo -e "\e[33mCreate application directory\e[0m"
