@@ -12,6 +12,7 @@ echo -e "\e[33m Download application content \e[0m"
 curl -L -o /tmp/shipping.zip https://roboshop-artifacts.s3.amazonaws.com/shipping.zip &>>/tmp/roboshop.log
 
 echo -e "\e[33m Extracting application content\e[0m"
+cd /app
 unzip /tmp/shipping.zip &>>/tmp/roboshop.log
 
 echo -e "\e[33m Download maven dependencies\e[0m"
